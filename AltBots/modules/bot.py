@@ -21,10 +21,10 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        altron = await e.reply(f"» __🫧 🇲𝐎𝐎𝐍 𝐈ꜱ 𝐑ᴇᴀᴅʏ 𝐓ᴏ 𝐁ʀɪɴɢ 𝐂ʏᴄʟᴏɴᴇ⚡️⛈🌪__")
+        altron = await e.reply(f"» __🫧 t͎a͎h͎a͎   a͎a͎g͎a͎y͎a͎  k͎i͎s͎k͎i͎   c͎h͎u͎d͎a͎i͎   k͎a͎r͎n͎i͎   h͎a͎i͎💀💀⚡️__")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await altron.edit(f"🫧 🇲𝐎𝐎𝐍 𝐈ꜱ 𝐑ᴇᴀᴅʏ 𝐓ᴏ 𝐁ʀɪɴɢ 𝐂ʏᴄʟᴏɴᴇ⚡️⛈🌪\n» `{mp} 𝙼𝚂`")
+        await altron.edit(f"🫧 t͎a͎h͎a͎   a͎a͎g͎a͎y͎a͎  k͎i͎s͎k͎i͎   c͎h͎u͎d͎a͎i͎   k͎a͎r͎n͎i͎   h͎a͎i͎💀💀⚡️\n» `{mp} 𝙼𝚂`")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -39,7 +39,7 @@ async def ping(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"`🥀★𝐑ᴇꜱᴛᴀʀᴛɪɴɢ 𝐌ᴏᴏɴ 𝐁ᴏᴛꜱ★🥀...`")
+        await e.reply(f"`🥀★𝐑ᴇꜱᴛᴀʀᴛɪɴɢ Taha 𝐁ᴏᴛꜱ★🥀...`")
         try:
             await X1.disconnect()
         except Exception:
@@ -123,7 +123,7 @@ async def addsudo(event):
                 newsudo = f"{sudousers} {target}"
             else:
                 newsudo = f"{target}"
-            await ok.edit(f"» **𝙽𝙴𝚆 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁**: `{target}`\n» 🥀★𝐑ᴇꜱᴛᴀʀᴛɪɴɢ 𝐌ᴏᴏɴ 𝐁ᴏᴛꜱ★🥀...`")
+            await ok.edit(f"» **𝙽𝙴𝚆 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁**: `{target}`\n» 🥀★𝐑ᴇꜱᴛᴀʀᴛɪɴɢ Taha 𝐁ᴏᴛꜱ★🥀...`")
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
